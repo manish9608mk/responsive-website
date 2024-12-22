@@ -1,0 +1,77 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  /* kkb */
+  display: flex;
+  flex-direction: column;
+
+  /* height: 100vh = 100% of the viewport height
+     height: 100%= 100% of the parent's element height
+  */
+  min-height: 95vh; 
+}
+.main {
+  /* So in the flex: 1 case, it means flex: 1 1 0 (aka flex-grow: 1; flex-shrink: 1; flex-basis: 0;). */
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: gray;
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.card {
+  width: 48%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.creative {
+  color: hotpink;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+
+    /* The text-align: justify; value stretches the lines so that each line has equal width (like in newspapers and magazines). */
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    
+    /*  The image keeps its aspect ratio and is scaled to fill the entire container.  */
+    object-fit: cover;
+  }
+}
